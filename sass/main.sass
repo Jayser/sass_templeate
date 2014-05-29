@@ -1,13 +1,23 @@
-// Library
-@import compass/utilities/sprites
-@import lib/mixins
+/*
+ * MAIN CSS
+ */
 
-// Global
+/* INCLUDE LIB & MIXINS */
+@import compass/utilities/sprites
+@import lib/base
+
+/*
+ * INCLUDE RESET CSS 
+ * & SET DEFAULT PROP
+ */
 @import common
 @import reset
 
-.ctc-prime
-	// Layouts
+/*
+ * SET WRAPPER FOR SCOPE 
+ * & RAISE PRIORITY
+ */
+.cth-prime
+	/* INCLUDE SHELL & MODULES */
 	@import layouts
-	// Widget		
-	@import widgets/widgets
+	@import modules/base

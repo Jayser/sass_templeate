@@ -1,0 +1,30 @@
+/*
+ * Name   : {Component name}
+ * Created: {User Name}
+ * Version: {0.0.0}
+ */
+
+/*------------------------------------*\
+ * - > SPRITE
+\*------------------------------------*/
+
+/* 
+ * MIXINS "lib/mixins/_sprites.scss"
+ * 
+ * PATH FOLDER "img/social-icons"
+ *
+ * FOLDER NAME "social-icons"
+ *
+ * ADD PREFIX to *.png
+ *
+ * twiter[social-icons-twiter.png]... IMG IN FOДDER "social-icons"
+ *
+ * - > EXAMPLE
+ *
+ */
+
+$icons: sprite-map("../social-icons/*.png", $spacing: 10px)
+
+@each $s in envato,soundcould,twiter,youtube
+	.social-icons-#{$s}
+		+sp(social-icons-#{$s},$icons)
