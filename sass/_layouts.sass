@@ -1,0 +1,54 @@
+/*
+ * Layouts
+ *     -> float
+ *     -> offsets in & out	
+ *     -> dimension	
+ */
+.is-left
+	float: left 
+
+.is-right
+	float: right
+
+.is-clear
+	overflow: hidden
+
+/* MARGIN OFFSET LEFT 0-5 STEP 1*/
+@for $i from 0 through 5
+	.offset-l-#{$i}
+		margin-left: 0px + $i
+
+/* MARGIN OFFSET LEFT 10-100 STEP 5 */
+@for $i from 0 through 18
+	.offset-l-#{10 + (5*$i)}
+		margin-left: 10px + (5*$i)
+
+/* MARGIN OFFSET RIGHT 0-5 STEP 1*/
+@for $i from 0 through 5
+	.offset-r-#{$i}
+		margin-right: 0px + $i
+
+/* MARGIN OFFSET RIGHT 10-100 STEP 5 */
+@for $i from 0 through 18
+	.offset-r-#{10 + (5*$i)}
+		margin-right: 10px + (5*$i)
+
+/* MARGIN OFFSET TOP 0-5 STEP 1*/
+@for $i from 0 through 5
+	.offset-t-#{$i}
+		margin-top: 0px + $i
+
+/* MARGIN OFFSET TOP 10-100 STEP 5 */
+@for $i from 0 through 18
+	.offset-t-#{10 + (5*$i)}
+		margin-top: 10px + (5*$i)
+
+/* MARGIN OFFSET BOTTOM 0-5 STEP 1*/
+@for $i from 0 through 5
+	.offset-b-#{$i}
+		margin-bottom: 0px + $i
+
+/* MARGIN OFFSET BOTTOM 10-100 STEP 5 */
+@for $i from 0 through 18
+	.offset-b-#{10 + (5*$i)}
+		margin-bottom: 10px + (5*$i)

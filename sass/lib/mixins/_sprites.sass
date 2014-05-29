@@ -1,0 +1,13 @@
+//Sprite without dimension
+=sp-wd($sprite, $icons)
+	background: sprite($icons, $sprite) no-repeat
+
+//Sprite with dimension
+=sp($sprite, $icons)
+	background: sprite($icons, $sprite) no-repeat
+	+img-size(sprite-file($icons, $sprite))
+
+// Helper get dimension
+=img-size($path)
+	width: image-width($path)
+	height: image-height($path)

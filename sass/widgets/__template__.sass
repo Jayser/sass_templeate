@@ -1,0 +1,32 @@
+/*
+ * Name: {Widget name}
+ * Created: {User Name}
+ * Version: {0.0.0}
+ * Last changed: {dd:mm:yy} {User Name}
+ */
+
+// ================ SPRITE <==
+
+ /* Helpers
+ *     -> lib/mixins/_sprites.scss
+ *
+ * Generated SPRITE 
+ *     -> img/social-icons
+ */
+
+/* 
+ * "social-icons"
+ *        -> FOLDER NAME
+ *    +
+ *        -> add prefix to "social-icons"...IMG_NAME.png
+ *    +
+ *        -> twiter, youtube... img in folder "social-icons"
+ */
+
+// ================ EXAMPLE <==
+
+$icons: sprite-map("../social-icons/*.png", $spacing: 10px)
+
+@each $s in envato,soundcould,twiter,youtube
+	.social-icons-#{$s}
+		+sp(social-icons-#{$s},$icons)

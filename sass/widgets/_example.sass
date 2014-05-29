@@ -1,0 +1,33 @@
+/*
+ * Name: main-menu test
+ * Created: Sergii_Azizov
+ * Version: 0.0.01
+ */
+.main-menu
+	line-height: 40px
+	background: #4183c4
+	padding: 5px
+	margin-top: 10px
+	+rounded(10px)
+
+.main-menu__item
+	display: inline-block
+	text-align: center
+	a
+		display: block
+		padding: 0 20px
+		color: #fff
+		text-decoration: none
+		&:hover
+			background: black
+			+rounded(10px)
+
+
+$icons: sprite-map("social-icons/*.png", $spacing: 10px)
+@each $s in envato,soundcould,twiter,youtube
+	.social-icons-#{$s}
+		+sp(social-icons-#{$s},$icons)
+
+
+.button:hover
+	+tab-focus

@@ -1,0 +1,29 @@
+// Single side border-radius
+=border-radius($topleft: 0, $topright: 0, $bottomleft: 0, $bottomright: 0)
+  -webkit-border-top-right-radius: $topright
+  -webkit-border-bottom-right-radius: $bottomright
+  -webkit-border-bottom-left-radius: $bottomleft
+  -webkit-border-top-left-radius: $topleft
+  -moz-border-radius-topright: $topright
+  -moz-border-radius-bottomright: $bottomright
+  -moz-border-radius-bottomleft: $bottomleft
+  -moz-border-radius-topleft: $topleft
+  border-top-right-radius: $topright
+  border-bottom-right-radius: $bottomright
+  border-bottom-left-radius: $bottomleft
+  border-top-left-radius: $topleft
+
+=rounded($radius)
+  +border-radius($radius, $radius, $radius, $radius)
+
+=border-top-radius($radius)
+  +border-radius($radius, $radius, 0, 0)
+
+=border-right-radius($radius)
+  +border-radius(0, $radius, $radius, 0)
+
+=border-bottom-radius($radius)
+  +border-radius(0, $radius, $radius, 0)
+
+=border-left-radius($radius)
+  +border-radius($radius, 0, $radius, 0)
